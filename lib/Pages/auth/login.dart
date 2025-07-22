@@ -45,11 +45,14 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Login")),
+      appBar: AppBar(title:  Center(child: Text("Cafe"))),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
+          mainAxisAlignment:MainAxisAlignment.center,
           children: [
+            Text("Welcome to Cafe"),
+            SizedBox(height: 10,),
             TextField(
               controller: emailController,
               decoration: InputDecoration(
@@ -95,32 +98,50 @@ class _LoginState extends State<Login> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // const Text("Don't have an account?"),
-                // TextButton(
-                //   onPressed: () {
-                //     Navigator.push(
-                //       context,
-                //       MaterialPageRoute(builder: (context) => const Singup()),
-                //     );
-                //   },
-                //   child: const Text("Sign Up"),
-                // ),
+                const Text("Don't have an account?",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 16, 16, 17),
+                  ),
+                
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Singup()),
+                    );
+                  },
+                  child: const Text("Sign Up",
+                   style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 241, 12, 12),
+                  ),
+                  ),
+                ),
                 SizedBox(height: 5,),
-                 GestureDetector(
-          onTap: () {
-            // TODO: Trigger Google Sign-In here
-            print("Google login tapped");
-          },
-          child: Image.asset(
-            'assets/google.png', // Add this asset
-            width: 20,
-            height: 20,
-          ),
-        ),
+        //          GestureDetector(
+        //   onTap: () {
+        //     // TODO: Trigger Google Sign-In here
+        //     print("Google login tapped");
+        //   },
+        //   child: Image.asset(
+        //     'assets/images/google.png',
+        //     height: 50,
+        //     width: 50,
+        //   ),
+        // ),
               ],
             ),
-            const SizedBox(height: 300),
-            const Text("Policy and Terms of Service"),
+            const SizedBox(height: 400),
+            const Text("Policy and Terms of Service",
+             style: TextStyle(
+                  fontSize: 16,
+                  
+                  color: Color.fromARGB(255, 16, 16, 17),
+                  ),),
           ],
         ),
       ),
