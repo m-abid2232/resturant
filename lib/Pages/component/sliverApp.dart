@@ -8,14 +8,15 @@ class Sliver extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       expandedHeight: 200,
+      collapsedHeight: 100,
       floating: true,
       pinned: false,
-      snap: true,
+      snap: false,
       backgroundColor: Colors.blue,
       
       title: title,
       flexibleSpace: FlexibleSpaceBar(
-        title: title,
+        background: child,
       ),
     );
   }
