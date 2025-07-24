@@ -7,7 +7,7 @@ class Resturant {
     food(
       name: "Cheese Burger",
       description: "A delicious cheese burger with fresh ingredients.",
-      imagePath: "assets/images/cheese_burger.png",
+      imagePath: "lib/image/burger.jpeg",
       price: 5.99,
       category: FoodCategory.burger,
       availableAddons: [
@@ -18,7 +18,7 @@ class Resturant {
  food(
   name: "Caesar Salad", 
   description: "A fresh Caesar salad with crispy lettuce and dressing.", 
-  imagePath: "assets/images/caesar_salad.png",
+  imagePath: "lib/image/salad.jpeg",
    price: 800,
    category: FoodCategory.salad, 
    availableAddons: [
@@ -31,7 +31,7 @@ class Resturant {
   food(
     name:"Chocolate Cake", 
    description: "A rich chocolate cake with a creamy frosting.",
-    imagePath: "assets/images/chocolate_cake.png",
+    imagePath: "lib/image/dessert.png",
     price: 4.99, 
     category: FoodCategory.dessert, 
     availableAddons: [
@@ -44,7 +44,7 @@ class Resturant {
     //for cold drink
   food(name: "Lemonade",
    description: "A refreshing lemonade with a hint of mint.",
-   imagePath: "assets/images/lemonade.png",
+   imagePath: "lib/image/drink.jpeg",
    price: 2.99,
    category: FoodCategory.coldDrink,
    availableAddons: [
@@ -55,7 +55,7 @@ class Resturant {
     //for sides
   food(name: "French Fries",
    description: "Crispy golden French fries.",
-   imagePath: "assets/images/french_fries.png",
+   imagePath: "lib/image/sides.jpeg",
    price: 2.49,
    category: FoodCategory.sides,
    availableAddons: [
