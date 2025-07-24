@@ -4,6 +4,7 @@ import 'package:resturant/Pages/component/description.dart';
 import 'package:resturant/Pages/component/drawer.dart';        
 import 'package:resturant/Pages/component/sliverApp.dart';
 import 'package:resturant/Pages/component/tab.dart';
+import 'package:resturant/Pages/model/food.dart';
 
 
 class Home extends StatefulWidget {
@@ -19,7 +20,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: FoodCategory.values.length, vsync: this);
   }
 @override
   void dispose() {

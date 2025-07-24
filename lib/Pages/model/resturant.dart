@@ -64,4 +64,6 @@ class Resturant {
    ]),
 
   ];
+
+  List<food> get menu => _menu;
 }
